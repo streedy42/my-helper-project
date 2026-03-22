@@ -7,7 +7,7 @@ class Settings(BaseSettings):
     
     # 현재 파일(config.py) 위치 기준으로 프로젝트 루트(backend) 경로 계산
     BASE_DIR: Path = Path(__file__).resolve().parent.parent.parent
-    UPLOAD_DIR: Path = BASE_DIR / "uploads"
+    UPLOAD_DIR: Path = BASE_DIR / "app/uploads"
 
     class Config:
         env_file = ".env"
